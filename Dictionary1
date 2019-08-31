@@ -18,7 +18,7 @@ def translate(w):
         else:
             return "I didn't understand your answer."
     else:
-        return "I can't find that word. Check the spelling and try again."
+        return "I couldn't find that word. Check the spelling and try again."
 
 
 word = input("Input a word: ")
@@ -26,7 +26,7 @@ word = input("Input a word: ")
 output = translate(word)
 
 if type(output) == list:
-    for item in output
-        print ("-" + item)
+    for item in output:
+        print("- " + item)
 else:
     print(output)
