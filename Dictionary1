@@ -9,6 +9,8 @@ def translate(w):
     w = w.lower()
     if w in dictionary:
         return dictionary[w]
+    elif w.title() in dictionary:
+        return dictionary[w.title()]
     elif len(get_close_matches(w, dictionary.keys())) > 0:
         yn = input("Did you mean %s? Type Y if yes, N if no: " % get_close_matches(w, dictionary.keys())[0])
         if yn == "Y":
