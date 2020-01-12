@@ -17,7 +17,7 @@ def translate(w):
         yn = input("Did you mean %s? Type Y if yes, N if no: " % get_close_matches(w, dictionary.keys())[0])
         if (yn == "Y") or (yn == "y"):
             return dictionary[get_close_matches(w, dictionary.keys())[0]]
-        elif (yn == "N") or (yn == "n":
+        elif (yn == "N") or (yn == "n"):
             return "Retype the word."
         else:
             return "I didn't understand your answer."
